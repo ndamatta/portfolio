@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
 });
 
 //PROJECTS
-fetch('projects.json')
+fetch('./json/projects.json')
 .then(response => response.json())
 .then(jsonData => {
     // Calculate the number of projects per column
