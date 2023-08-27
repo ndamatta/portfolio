@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar is-warning">
+        <div class="navbar-brand">
+            <a class="navbar-brand mx-3 my-3">
+            <img src="https://placekitten.com/200/200" style="max-height: 50px;">
+            </a>
+            <a class="navbar-burger my-3" id="burger">
+                <span></span><span></span><span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu my-1" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item px-4 mx-5 has-text-weight-bold is-active has-border">Home</a>
+                <a class="navbar-item px-4 mx-5 has-text-weight-bold">Projects</a>
+                <a class="navbar-item px-4 mx-5 has-text-weight-bold">About me</a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                    <a class="button is-primary px-4 mx-5 has-text-weight-bold">Contact me!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class="section is-medium has-text-centered">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+            <h1 class="title is-2 has-text-centered">Natanael da Matta</h1>
+            <h2 class="subtitle">studying and loving software development</h2>
+        </div>
+        
+        <section class="section has-background-warning pt-3" style="margin-top: 10rem">
+            <div class="container">
+                <div class="columns has-text-centered">
+                    <div class="column is-centered mx-6">
+                        <h1 class="title mt-6">Hi, Nice to meet you :)</h1>
+                        <p class="subtitle" style="margin-top: 4rem;">I'm a young, experienced and responsible person. I always stood out for my high moral values and for giving my best in each project.</p>
+                        <p class="subtitle">Feel free to see my projects below, and if you are interested, you can learn more about me!</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <div class="tabs is-centered is-boxed" style="margin-top: 10rem;">
+            <ul>
+              <li class="is-active" data-target="c-sharp"><a>C#</a></li>
+              <li data-target="python"><a>Python</a></li>
+              <li data-target="web"><a>Web</a></li>
+            </ul>
+          </div>
+          
+          <div class="has-text-centered" id="tab-content">
+            <div id="c-sharp" class="is-active mx-6">
+              <h3 class="mt-6 title is-size-5">C#</h3>
+              <div class="columns is-centered">
+                <div class="column is-one-fifth" id="home-column1"></div>
+                <div class="column is-one-fifth" id="home-column2"></div>
+                <div class="column is-one-fifth" id="home-column3"></div>
+              </div>
+            </div>
+            <div id="python">
+              <h3 class="mt-6 title is-size-5">Python</h3>
+              <p>Content for Python tab.</p>
+            </div>
+            <div id="web">
+              <h3 class="mt-6 title is-size-5">Web</h3>
+              <p>Content for Web tab.</p>
+            </div>
+          </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Copyright 2023</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
