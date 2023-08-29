@@ -39,40 +39,35 @@ window.addEventListener('load', () => {
    })
 });
 
-//PROJECTS
 fetch('./json/projects.json')
-.then(response => response.json())
-.then(jsonData => {
-    // Calculate the number of projects per column
-    const projectsPerColumn = Math.ceil(jsonData.length / 3);
+    .then(response => response.json())
+    .then(jsonData => {
+        const columnContainers = {
+            "c-sharp": document.getElementById('c-sharp-column-container'),
+            "python": document.getElementById('python-column-container'),
+            "web": document.getElementById('web-column-container')
+        };
 
-    // Get the card containers for each column
-    const columnContainers = [
-        document.getElementById('home-column1'),
-        document.getElementById('home-column2'),
-        document.getElementById('home-column3')
-    ];
-
-    // Distribute projects evenly across columns
-    jsonData.forEach((cardData, index) => {
-        const columnIndex = Math.floor(index / projectsPerColumn);
-        const cardContainer = columnContainers[columnIndex];
-
-        const cardTemplate = `
-            <div class="card my-6 mx-4">
-                <div class="card-image has-text-centered">
-                    <figure class="image is-3by1"><img src="${cardData.image}" alt=""></figure>
+        jsonData.forEach(cardData => {
+            const cardTemplate = `
+                <div class="column is-one-third">
+                    <div class="card my-2 mx-1 has-background-white-ther" id="card">
+                        <div class="card-image has-text-centered">
+                            <figure class="image is-3by1"><img src="${cardData.image}" alt=""></figure>
+                        </div>
+                        <div class="card-footer">  
+                            <p class="card-footer-item"><a href="${cardData.url}" target="_blank" id="view-github">View in Github</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <p class="title is-5">${cardData.title}</p>
-                </div>
-                <div class="card-footer">
-                    <p class="card-footer-item"><a href="${cardData.url}" class="has-text-gray">View in Github</a></p>
-                </div>
-            </div>
-        `;
+            `;
 
-        cardContainer.innerHTML += cardTemplate;
-    });
-})
-.catch(error => console.error('Error fetching data:', error));
+            const cardContainer = columnContainers[cardData.language];
+            
+                cardContainer.innerHTML += cardTemplate;
+            
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+

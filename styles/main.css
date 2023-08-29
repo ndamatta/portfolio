@@ -1,6 +1,24 @@
-.navbar-item {
-    transition: transform .2s;    
+.navbar-item {transition: transform .2s;}
+.navbar-item:hover {transform: scale(1.02);}
+#tabs ul li a {transition: transform .2s;
+    padding: .5rem 3rem;
 }
-.navbar-item:hover {
-    transform: scale(1.05);
+#tabs ul li {padding: 0 .3rem;}
+#tabs ul li a:hover {transform: scale(1.07);}
+#view-github {
+    background-color: #363636;
+    padding: .4rem 1.3rem;
+    border-radius: 15px;
+    color: white;
+    transition: transform .3s;
 }
+#view-github:hover {
+    transform: scale(1.01);
+    color: #ffe08a;
+}
+#tabs ul li.is-active a {
+    color: #ffe08a;
+    background-color: #363636;
+}
+#card .card-footer {border: none;}
+
