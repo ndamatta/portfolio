@@ -30,57 +30,57 @@
         "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Fuel%20usage%20calculator"
     },
     {
+        "title": "LIFE EXPECTANCY ANALISIS",
+        "language": "python",
+        "image": "./images/py/_py2.webp",
+        "url": "https://github.com/ndamatta/CSE110-BYU-Pathway/tree/main/For%20PORTFOLIO/Life%20expectancy%20analisis"
+    },
+    {
         "title": "SHAPE CALCULATOR",
         "language": "python",
-        "image": "./images/py/py2.webp",
+        "image": "./images/py/_py1.webp",
         "url": "https://github.com/ndamatta/CSE110-BYU-Pathway/tree/main/For%20PORTFOLIO/Shape%20calculator"
     },
     {
-        "title": "LIFE EXPECTANCY ANALISIS",
-        "language": "python",
-        "image": "./images/py/py1.webp",
-        "url": "https://github.com/ndamatta/CSE110-BYU-Pathway/tree/main/For%20PORTFOLIO/Life%20expectancy%20analisis"
+        "title": "SELF CONCIOUS",
+        "language": "c-sharp",
+        "image": "./images/cs/cs1.webp",
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Self%20Concious"
     },
     {
         "title": "GOAL SETTER",
         "language": "c-sharp",
-        "image": "./images/cs/cs1.webp",
+        "image": "./images/cs/cs2.webp",
         "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Goal%20Setter"
     },
     {
         "title": "HIDE SCRIPTURE",
         "language": "c-sharp",
-        "image": "./images/cs/cs2.webp",
+        "image": "./images/cs/cs3.webp",
         "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Hide%20Scripture"
     },
     {
         "title": "JOURNAL",
         "language": "c-sharp",
-        "image": "./images/cs/cs3.webp",
+        "image": "./images/cs/cs4.webp",
         "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Journal"
     },
     {
         "title": "LIST CALCULATOR",
         "language": "c-sharp",
-        "image": "./images/cs/cs4.webp",
+        "image": "./images/cs/cs5.webp",
         "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/List%20calculator"
     },
     {
         "title": "RESUME DISPLAY",
         "language": "c-sharp",
-        "image": "./images/cs/cs5.webp",
+        "image": "./images/cs/cs6.webp",
         "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Resume%20display"
     },
     {
         "title": "SHAPE AREA CALCULATOR",
         "language": "c-sharp",
-        "image": "./images/cs/cs6.webp",
-        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Shape%20area%20calculator"
-    },
-    {
-        "title": "SHAPE AREA CALCULATOR",
-        "language": "c-sharp",
         "image": "./images/cs/cs7.webp",
-        "url": "https://github.com/ndamatta/CSE110-BYU-Pathway/tree/main/For%20PORTFOLIO/Shape%20calculator"
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Shape%20area%20calculator"
     }
 ] 
