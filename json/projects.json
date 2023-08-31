@@ -82,5 +82,11 @@
         "language": "c-sharp",
         "image": "./images/cs/cs7.webp",
         "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Shape%20area%20calculator"
+    },
+    {
+        "title": "BOUNTIFUL FOODS",
+        "language": "web",
+        "image": "./images/web/bountiful.png",
+        "url": "https://github.com/ndamatta/bountifulfoods"
     }
 ] 
