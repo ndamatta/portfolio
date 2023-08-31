@@ -21,4 +21,10 @@
     background-color: #363636;
 }
 #card .card-footer {border: none;}
+.tabs-github-link {
+    color: #ffe08a;
+    background-color: #363636;
+    padding: .1rem .4rem;
+    border-radius: 5px;
+}
 
