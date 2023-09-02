@@ -12,7 +12,7 @@
 #aboutme-tabs a {color: #363636;}
 #view-github {
     background-color: #363636;
-    padding: .4rem 1.3rem;
+    padding: .1rem 1rem;
     border-radius: 15px;
     color: white;
     transition: transform .3s;
