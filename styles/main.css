@@ -1,10 +1,13 @@
 .navbar-item {transition: transform .2s;}
-.navbar-item:hover {transform: scale(1.02);}
+.navbar-item:hover {transform: scale(1.03); height: 97%;}
+.navbar-end{height: 100%;}
+.navbar-end span {transition: transform .2s;}
+.navbar-end span:hover {transform: scale(1.05);}
 #tabs ul li a {transition: transform .2s;
     padding: .5rem 3rem;
 }
 #tabs ul li {padding: 0 .3rem;}
-#tabs ul li a:hover {transform: scale(1.07);}
+#tabs ul li a:hover {transform: scale(1.08);}
 #view-github {
     background-color: #363636;
     padding: .4rem 1.3rem;
@@ -24,7 +27,10 @@
 .tabs-github-link {
     color: #ffe08a;
     background-color: #363636;
-    padding: .1rem .4rem;
+    padding: .2rem .4rem;
     border-radius: 5px;
+    text-decoration: none;
+    transition: transform .3s;
 }
+.tabs-github-link:hover {color: #ffe08a}
 
