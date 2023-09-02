@@ -1,5 +1,5 @@
-.navbar-item, #home-calltoaction a {transition: transform .2s;}
-.navbar-item:hover, #home-calltoaction a:hover {transform: scale(1.02);}
+.navbar-item, #home-calltoaction a, #home-calltoaction img {transition: transform .2s;}
+.navbar-item:hover, #home-calltoaction a:hover, #home-calltoaction img:hover {transform: scale(1.02);}
 .navbar-end{height: 98%;}
 .navbar-end span {transition: transform .2s;}
 .navbar-end span:hover {transform: scale(1.05);}
