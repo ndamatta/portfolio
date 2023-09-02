@@ -1,6 +1,6 @@
-.navbar-item {transition: transform .2s;}
-.navbar-item:hover {transform: scale(1.03); height: 97%;}
-.navbar-end{height: 100%;}
+.navbar-item, #home-calltoaction a {transition: transform .2s;}
+.navbar-item:hover, #home-calltoaction a:hover {transform: scale(1.02);}
+.navbar-end{height: 98%;}
 .navbar-end span {transition: transform .2s;}
 .navbar-end span:hover {transform: scale(1.05);}
 #home-tabs ul li a {
@@ -36,4 +36,5 @@
 }
 .tabs-github-link:hover {color: #ffe08a}
 #portrait {padding-top: 0; border-radius: 200px;}
+#home-calltoaction {margin-bottom: 19rem;}
 
