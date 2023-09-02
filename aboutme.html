@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta name="description" content="Natanael da Matta portfolio, showing information about me, my hobbies and interest.">
+    <title>About me</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar is-dark">
+            <div class="navbar-brand">
+                <a class="navbar-brand mx-3 my-3">
+                <img src="https://placekitten.com/200/200" style="max-height: 50px;">
+                </a>
+                <a class="navbar-burger my-3" id="burger">
+                    <span></span><span></span><span></span>
+                </a>
+            </div>
+    
+            <div class="navbar-menu" id="nav-links">
+                <div class="navbar-end">
+                    <a class="navbar-item px-6 mx-0 has-text-weight-bold is-active" href="index.html"><span>Home</span></a>
+                    <a class="navbar-item px-5 mx-0 has-text-weight-bold" href="aboutme.html"><span>About me</span></a>
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-warning px-5 mx-5 has-text-weight-bold">Contact me!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section is-medium has-text-centered">
+            <div class="is-flex is-justify-content-center"><img id="portrait" class="image is-1by1" src="images/portrait.JPG"></div>
+            <h1 class="title is-2 has-text-centered">About me</h1>
+        </section>
+
+        <div class="tabs is-centered" id="aboutme-tabs">
+            <ul>
+              <li class="is-active" data-target="whoami"><a>Who am I?</a></li>
+              <li data-target="hobbies"><a>Hobbies</a></li>
+              <li data-target="education"><a>Education</a></li>
+              <li data-target="job"><a>Job</a></li>
+            </ul>
+        </div>
+        <div id="tab-content">
+            <div id="whoami">
+                <div class="columns">
+                    <div class="column is-half">
+                        <article class="message">
+                            <div class="message-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                            </div>
+                        </article>
+    
+                    </div>
+                    <div class="column">
+                        <p>Who am I</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="hobbies">
+                <div class="columns">
+                    <div class="column is-half">
+                        <article class="message">
+                            <div class="message-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <p>Hobbies</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="education">
+                <div class="columns">
+                    <div class="column is-half">
+                        <article class="message">
+                            <div class="message-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                            </div>
+                        </article>
+    
+                    </div>
+                    <div class="column">
+                        <p>Education</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="job">
+                <div class="columns">
+                    <div class="column is-half">
+                        <article class="message">
+                            <div class="message-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                            </div>
+                        </article>
+    
+                    </div>
+                    <div class="column">
+                        <p>Job</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy;2023 | Natanael da Matta | Bulma</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>   
+</body>
+</html>
