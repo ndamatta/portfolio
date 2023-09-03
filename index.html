@@ -20,7 +20,7 @@
     <nav class="navbar is-dark">
         <div class="navbar-brand">
             <a class="navbar-brand mx-3 my-3" href="./">
-            <img src="images/icon.webp" class="image is-64x64 mx-6-desktop mx-1-mobile">
+            <img src="images/icon.webp" class="image is-64x64" alt="website icon">
             </a>
             <a class="navbar-burger my-3" id="burger">
                 <span></span><span></span><span></span>
@@ -40,21 +40,26 @@
         </div>
     </nav>
     </header>
+
     <main>
         <section class="section mt-6 is-small has-text-centered">
             <div class="is-flex is-justify-content-center">
-                <img class="image is-squared is-rounded" src="images/avatar.webp">
+                <img class="image is-squared is-rounded" src="images/avatar.webp" alt="Profile Picture">
             </div>
             <h1 class="title is-2 has-text-centered">Nate</h1>
             <h2 class="subtitle">studying and loving software development</h2>
         </section>
 
         <section class="section is-medium py-1 has-text-centered" id="home-calltoaction">
-            <div class="sec">
+            <div class="container">
                 <a class="button is-warning px-5 py-5 my-4 has-text-weight-bold">Contact me!</a>
             </div>
-            <a href="https://github.com/ndamatta" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" class="mt-2 mx-3"></a>
-            <a href="https://www.linkedin.com/in/natanael-damatta/" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" class="mt-2 mx-3"></a>
+            <a href="https://github.com/ndamatta" target="_blank" aria-label="GitHub Profile">
+                <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" class="mt-2 mx-3">
+            </a>
+            <a href="https://www.linkedin.com/in/natanael-damatta/" target="_blank" aria-label="LinkedIn Profile">
+                <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" class="mt-2 mx-3">
+            </a>
         </section>
         
         <section class="section has-background-dark pt-3" style="margin-top: 7rem">
@@ -62,39 +67,38 @@
                 <div class="columns has-text-centered">
                     <div class="column is-centered mx-6">
                         <h1 class="title mt-6 has-text-white">Hi, Nice to meet you <span class="has-text-warning">:)</span></h1>
-                        <p class="subtitle has-text-white" style="margin-top: 4rem;">I'm a <span class="has-text-warning">young</span>, <span class="has-text-warning">experienced</span> and <span class="has-text-warning">responsible</span> person. I always stood out for my high moral values and for giving my best in each project.</p>
-                        <p class="subtitle has-text-white">Feel free to see my projects below, and if you are interested, you can learn more <a href="#" class="has-text-warning is-underlined">about me!</a></p>
+                        <p class="subtitle has-text-white" style="margin-top: 4rem;">I'm a <span class="has-text-warning">young</span>, <span class="has-text-warning">experienced</span>, and <span class="has-text-warning">responsible</span> person. I always stood out for my high moral values and for giving my best in each project.</p>
+                        <p class="subtitle has-text-white">Feel free to see my projects below, and if you are interested, you can <a href="#" class="has-text-warning is-underlined">learn more about me!</a></p>
                     </div>
                 </div> 
             </div>
         </section>
 
-        <div class="tabs is-centered is-boxed mx-6" id="home-tabs"style="margin-top: 10rem;">
-            <ul>
-                <li class="is-active" data-target="c-sharp"><a class="px-3">C#</a></li>
-                <li data-target="python"><a class="px-3">Python</a></li>
-                <li data-target="web"><a class="px-3">Web</a></li>
+        <div class="tabs is-centered is-boxed mx-6" id="home-tabs" style="margin-top: 10rem;">
+            <ul role="tablist">
+                <li class="is-active" data-target="c-sharp" role="tab" aria-selected="true"><a class="px-3">C#</a></li>
+                <li data-target="python" role="tab" aria-selected="false"><a class="px-3">Python</a></li>
+                <li data-target="web" role="tab" aria-selected="false"><a class="px-3">Web</a></li>
             </ul>
         </div>
 
         <div class="has-text-centered" id="tab-content">
-            <div id="c-sharp" class="is-active mx-6">
+            <div id="c-sharp" class="is-active mx-6" role="tabpanel" aria-labelledby="c-sharp-tab">
                 <h3 class="mt-2 title is-size-5">Some of my C# projects! :)</h3>
-                <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank">github</a></h3>
+                <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h3>
                 <div class="columns mb-6 is-multiline" id="c-sharp-column-container"></div>
             </div>
-            <div class="mx-6" id="python">
+            <div class="mx-6" id="python" role="tabpanel" aria-labelledby="python-tab">
                 <h3 class="mt-2 title is-size-5">Some of my Python projects! :)</h3>
-                <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank">github</a></h3>
+                <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h3>
                 <div class="columns mb-6 is-multiline" id="python-column-container"></div>
             </div>
-            <div class="mx-6" id="web">
+            <div class="mx-6" id="web" role="tabpanel" aria-labelledby="web-tab">
                 <h3 class="mt-2 title is-size-5">Some of my Web projects! :)</h3>
-                <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank">github</a></h3>
+                <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h3>
                 <div class="columns mb-6 is-multiline" id="web-column-container"></div>
             </div>
-        </div>       
-        
+        </div>  
     </main>
 
     <footer class="footer">
