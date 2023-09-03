@@ -36,5 +36,6 @@
 }
 .tabs-github-link:hover {color: #ffe08a}
 #portrait {padding-top: 0; border-radius: 200px;}
+#tab-content img {padding-top: 0;}
 #home-calltoaction {margin-bottom: 19rem;}
 

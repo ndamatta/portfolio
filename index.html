@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Natanael da Matta portfolio, showing my projects in Web development, C# c-sharp, and Python. Also, displaying information about me">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    <link rel="canonical" href="https://www.yourwebsite.com">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <meta name="description" content="Natanael da Matta portfolio, showing my projects in Web development, C# c-sharp, and Python. Also, displaying information about me">
+    <meta property="og:title" content="Nate da Matta | studying and loving web development">
+    <meta property="og:description" content="Natanael da Matta portfolio, showing my projects in Web development, C# c-sharp, and Python. Also, displaying information about me">
+    <meta property="og:image" content="images/avatar.webp">
+    <meta property="og:url" content="https://ndamatta.github.io/ndamatta/">
     <title>Nate da Matta | studying and loving web development</title>
 </head>
 <body>
     <header>
     <nav class="navbar is-dark">
         <div class="navbar-brand">
-            <a class="navbar-brand mx-3 my-3">
-            <img src="https://placekitten.com/200/200" style="max-height: 50px;">
+            <a class="navbar-brand mx-3 my-3" href="./">
+            <img src="images/icon.webp" class="image is-64x64 mx-6-desktop mx-1-mobile">
             </a>
             <a class="navbar-burger my-3" id="burger">
                 <span></span><span></span><span></span>
@@ -26,7 +33,7 @@
                 <a class="navbar-item px-5 mx-0 has-text-weight-bold" href="aboutme.html"><span>About me</span></a>
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-warning px-5 mx-5 has-text-weight-bold">Contact me!</a>
+                        <a class="button is-warning px-5 mx-6 has-text-weight-bold">Contact me!</a>
                     </div>
                 </div>
             </div>
@@ -35,8 +42,9 @@
     </header>
     <main>
         <section class="section mt-6 is-small has-text-centered">
-            <div class="is-flex is-justify-content-center"><img class="image is-128x128" src="images/avatar.png"></div>
-            
+            <div class="is-flex is-justify-content-center">
+                <img class="image is-squared is-rounded" src="images/avatar.webp">
+            </div>
             <h1 class="title is-2 has-text-centered">Nate</h1>
             <h2 class="subtitle">studying and loving software development</h2>
         </section>
@@ -92,6 +100,11 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>&copy;2023 | Natanael da Matta | Bulma</p>
+            <div class="is-flex is-justify-content-center">
+                <a href="./">
+                    <img src="images/icon.webp" class="image is-64x64">
+                </a>
+            </div>
         </div>
     </footer>
     <script src="scripts/main.js"></script>
