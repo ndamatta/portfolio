@@ -42,26 +42,34 @@
     </header>
     <main>
         <section class="section is-small my-6 has-text-centered">
-            <div class="is-flex is-justify-content-center"><img id="portrait" class="image is-1by1" src="images/portrait.webp"></div>
+            <div class="is-flex is-justify-content-center"><img id="portrait" class="image is-1by1" src="images/portrait.webp" alt="Portrait"></div>
             <h1 class="title is-2 has-text-centered">About me</h1>
         </section>
 
-        <div class="tabs is-centered mx-6" id="aboutme-tabs">
-            <ul>
-              <li class="is-active" data-target="whoami"><a>Who am I?</a></li>
-              <li data-target="hobbies"><a>Hobbies</a></li>
-              <li data-target="education"><a>Education</a></li>
-              <li data-target="job"><a>Job</a></li>
+        <div class="tabs is-centered mx-6" id="aboutme-tabs" aria-label="About me tabs">
+            <ul role="tablist">
+              <li class="is-active" data-target="whoami" role="tab" aria-selected="true"><a>Who am I?</a></li>
+              <li data-target="hobbies" role="tab" aria-selected="false"><a>Hobbies</a></li>
+              <li data-target="education" role="tab" aria-selected="false"><a>Education</a></li>
+              <li data-target="job" role="tab" aria-selected="false"><a>Job</a></li>
+              <li data-target="whatiamlookingfor" role="tab" aria-selected="false"><a>I'm looking for...</a></li>
             </ul>
         </div>
-        <div id="tab-content">
+        <div id="tab-content" aria-live="polite">
+            <!-- GENERATED WITH JS -->
         </div>
     </main>
     <footer class="footer">
         <div class="content has-text-centered">
             <p>&copy;2023 | Natanael da Matta | Bulma</p>
+            <div class="is-flex is-justify-content-center">
+                <a href="./">
+                    <img src="images/icon.webp" class="image is-64x64">
+                </a>
+            </div>
         </div>
     </footer>
-    <script src="scripts/main.js"></script>   
+    <script src="scripts/main.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>
 </html>
