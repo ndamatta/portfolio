@@ -30,7 +30,7 @@
             <div class="navbar-menu" id="nav-links">
                 <div class="navbar-end">
                     <a class="navbar-item px-6 mx-0 has-text-weight-bold" href="index.html" aria-label="Home"><span>Home</span></a>
-                    <a class="navbar-item px-5 mx-0 has-text-weight-bold is-active" href="aboutme.html" aria-label="About me"><span>About me</span></a>
+                    <a class="navbar-item px-5 mx-0 has-text-weight-bold" href="aboutme.html" aria-label="About me"><span>About me</span></a>
                     <div class="navbar-item">
                         <div class="buttons">
                             <a class="button is-warning px-5 mx-5 has-text-weight-bold" aria-label="Contact me">Contact me!</a>
@@ -41,7 +41,8 @@
         </nav>
     </header>
 
-    <main>
+    <main class="home">
+        <!-- AVATAR AND TITLE -->
         <section class="section mt-6 is-small has-text-centered">
             <div class="is-flex is-justify-content-center">
                 <img class="image is-squared is-rounded" src="images/avatar.webp" alt="Profile Picture">
@@ -50,6 +51,7 @@
             <h2 class="subtitle">studying and loving software development</h2>
         </section>
 
+        <!-- CALL TO ACTION -->
         <section class="section is-medium py-1 has-text-centered" id="home-calltoaction">
             <div class="container">
                 <a class="button is-warning px-5 py-5 my-4 has-text-weight-bold">Contact me!</a>
@@ -62,19 +64,21 @@
             </a>
         </section>
         
-        <section class="section has-background-dark pt-3" style="margin-top: 7rem">
+        <!-- INTRODUCTION -->
+        <section class="section has-background-dark pt-3">
             <div class="container">
                 <div class="columns has-text-centered">
                     <div class="column is-centered mx-6">
                         <h1 class="title mt-6 has-text-white">Hi, Nice to meet you <span class="has-text-warning">:)</span></h1>
-                        <p class="subtitle has-text-white" style="margin-top: 4rem;">I'm a <span class="has-text-warning">young</span>, <span class="has-text-warning">experienced</span>, and <span class="has-text-warning">responsible</span> person. I always stood out for my high moral values and for giving my best in each project.</p>
+                        <p class="subtitle has-text-white mt-6">I'm a <span class="has-text-warning">young</span>, <span class="has-text-warning">experienced</span>, and <span class="has-text-warning">responsible</span> person. I always stood out for my high moral values and for giving my best in each project.</p>
                         <p class="subtitle has-text-white">Feel free to see my projects below, and if you are interested, you can <a href="#" class="has-text-warning is-underlined">learn more about me!</a></p>
                     </div>
                 </div> 
             </div>
         </section>
 
-        <div class="tabs is-centered is-boxed mx-6" id="home-tabs" style="margin-top: 10rem;">
+        <!-- TABS -->
+        <div class="tabs is-centered is-boxed mx-6" id="home-tabs">
             <ul role="tablist">
                 <li class="is-active" data-target="c-sharp" role="tab" aria-selected="true"><a class="px-3">C#</a></li>
                 <li data-target="python" role="tab" aria-selected="false"><a class="px-3">Python</a></li>
@@ -82,21 +86,28 @@
             </ul>
         </div>
 
+        <!-- TABS CONTENT -->
         <div class="has-text-centered" id="tab-content">
             <div id="c-sharp" class="is-active mx-6" role="tabpanel" aria-labelledby="c-sharp-tab">
                 <h3 class="mt-2 title is-size-5">Some of my C# projects! :)</h3>
                 <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h3>
-                <div class="columns mb-6 is-multiline" id="c-sharp-column-container"></div>
+                <div class="columns mb-6 is-multiline" id="c-sharp-column-container">
+                    <!-- GENERATED WITH JS -->
+                </div>
             </div>
             <div class="mx-6" id="python" role="tabpanel" aria-labelledby="python-tab">
                 <h3 class="mt-2 title is-size-5">Some of my Python projects! :)</h3>
                 <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h3>
-                <div class="columns mb-6 is-multiline" id="python-column-container"></div>
+                <div class="columns mb-6 is-multiline" id="python-column-container">
+                    <!-- GENERATED WITH JS -->
+                </div>
             </div>
             <div class="mx-6" id="web" role="tabpanel" aria-labelledby="web-tab">
                 <h3 class="mt-2 title is-size-5">Some of my Web projects! :)</h3>
                 <h3 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h3>
-                <div class="columns mb-6 is-multiline" id="web-column-container"></div>
+                <div class="columns mb-6 is-multiline" id="web-column-container">
+                    <!-- GENERATED WITH JS -->
+                </div>
             </div>
         </div>  
     </main>
