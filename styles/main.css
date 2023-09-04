@@ -39,3 +39,10 @@
 #tab-content img {padding-top: 0;}
 #home-calltoaction {margin-bottom: 19rem;}
 
+@media screen and (max-width: 1024px) {
+    #tab-content .columns {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
