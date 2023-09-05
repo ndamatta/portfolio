@@ -3,6 +3,7 @@
 .navbar-end{height: 98%;}
 .navbar-end span {transition: transform .2s;}
 .navbar-end span:hover {transform: scale(1.05);}
+#home-tabs {margin-top: 5rem;}
 #home-tabs ul li a {
     transition: transform .2s;
     padding: .5rem 3rem;
@@ -12,7 +13,7 @@
 #aboutme-tabs a {color: #363636;}
 #view-github {
     background-color: #363636;
-    padding: .1rem 1rem;
+    padding: .1rem .5rem;
     border-radius: 15px;
     color: white;
     transition: transform .3s;
@@ -37,10 +38,10 @@
 .tabs-github-link:hover {color: #ffe08a}
 #portrait {padding-top: 0; border-radius: 200px;}
 #tab-content img {padding-top: 0;}
-#home-calltoaction {margin-bottom: 19rem;}
+#home-calltoaction {margin-bottom: 13rem;}
 
 @media screen and (max-width: 1024px) {
-    #tab-content .columns {
+    .aboutme #tab-content .columns {
         display: flex;
         flex-direction: column;
     }
