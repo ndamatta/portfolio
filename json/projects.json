@@ -88,5 +88,11 @@
         "language": "web",
         "image": "./images/web/bountiful.webp",
         "url": "https://github.com/ndamatta/bountifulfoods"
+    },
+    {
+        "title": "FUNES COC",
+        "language": "web",
+        "image": "./images/web/funescoc.webp",
+        "url": "https://github.com/ndamatta/funescoc"
     }
 ] 
