@@ -98,7 +98,7 @@ function createTabs() {
                      </div>
                      <div class="column is-half-desktop">
                         <div class="has-text-centered mx-3">
-                           <img src="${tab.image}" class="image is-5by3">
+                           <img src="${tab.image}" alt="Picture about me" class="image is-5by3">
                            ${tab.div}
                         </div>                     
                      </div>
