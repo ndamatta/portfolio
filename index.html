@@ -88,21 +88,21 @@
 
         <!-- TABS CONTENT -->
         <div class="has-text-centered" id="tab-content">
-            <div id="c-sharp" class="is-active mx-6" aria-labelledby="c-sharp-tab">
+            <div id="c-sharp" class="is-active mx-6">
                 <h1 class="mt-2 title is-size-5">Some of my C# projects! :)</h1>
                 <h2 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h2>
                 <div class="columns mb-6 is-multiline" id="c-sharp-column-container">
                     <!-- GENERATED WITH JS -->
                 </div>
             </div>
-            <div class="mx-6" id="python" aria-labelledby="python-tab">
+            <div class="mx-6" id="python">
                 <h1 class="mt-2 title is-size-5">Some of my Python projects! :)</h1>
                 <h2 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h2>
                 <div class="columns mb-6 is-multiline" id="python-column-container">
                     <!-- GENERATED WITH JS -->
                 </div>
             </div>
-            <div class="mx-6" id="web" aria-labelledby="web-tab">
+            <div class="mx-6" id="web">
                 <h1 class="mt-2 title is-size-5">Some of my Web projects! :)</h1>
                 <h2 class="subtitle mt-1 is-size-6">detailed info at <a class="tabs-github-link ml-1" href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer">github</a></h2>
                 <div class="columns mb-6 is-multiline" id="web-column-container">
@@ -128,22 +128,22 @@
                 <!-- FORM -->
                 <form action="https://formspree.io/f/xbjvyzpn" method="POST">
                     <div class="field">
-                        <label class="label">Your name</label>
+                        <label for="name" class="label">Your name</label>
                         <div class="control">
                             <input type="text" class="input" name="name" required>
                         </div>
                     </div>
                     <div class="field">
-                        <label class="label">Email</label>
+                        <label for="email" class="label">Email</label>
                         <div class="control has-icons-right">
-                            <input id="emailInput" class="input" name="email" type="email" placeholder="email@example.com" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+                            <input id="emailInput" class="input" name="email" type="email" placeholder="email@example.com" required>
                         </div>
                         <p id="emailError" class="help is-danger">Please, enter a valid email</p>
                     </div>
                     <div class="field">
-                        <label class="label">Message</label>
+                        <label for="message" class="label">Message</label>
                         <div class="control">
-                            <textarea class="textarea" placeholder="Hey Nate! I'm interested in..." name="text" required></textarea>
+                            <textarea class="textarea" placeholder="Hey Nate! I'm interested in..." name="message" required></textarea>
                         </div>
                     </div>
                     <div class="mt-6 has-text-centered">

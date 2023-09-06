@@ -89,22 +89,22 @@
                 <!-- FORM -->
                 <form action="https://formspree.io/f/xbjvyzpn" method="POST">
                     <div class="field">
-                        <label class="label">Your name</label>
+                        <label for="name" class="label">Your name</label>
                         <div class="control">
                             <input type="text" class="input" name="name" required>
                         </div>
                     </div>
                     <div class="field">
-                        <label class="label">Email</label>
+                        <label for="email" class="label">Email</label>
                         <div class="control has-icons-right">
-                            <input id="emailInput" class="input" name="email" type="email" placeholder="email@example.com" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+                            <input id="emailInput" class="input" name="email" type="email" placeholder="email@example.com" required>
                         </div>
                         <p id="emailError" class="help is-danger">Please, enter a valid email</p>
                     </div>
                     <div class="field">
-                        <label class="label">Message</label>
+                        <label for="message" class="label">Message</label>
                         <div class="control">
-                            <textarea class="textarea" placeholder="Hey Nate! I'm interested in..." name="text" required></textarea>
+                            <textarea class="textarea" placeholder="Hey Nate! I'm interested in..." name="message" required></textarea>
                         </div>
                     </div>
                     <div class="mt-6 has-text-centered">
