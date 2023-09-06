@@ -41,9 +41,22 @@
         </nav>
     </header>
     <main class="aboutme">
-        <section class="section is-small my-6 has-text-centered">
+        <section class="section is-small has-text-centered mt-6">
             <div class="is-flex is-justify-content-center"><img id="portrait" class="image is-1by1" src="images/portrait.webp" alt="Portrait"></div>
             <h1 class="title is-2 has-text-centered">About me</h1>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="section is-medium has-text-centered py-1" id="aboutme-calltoaction">
+            <div class="container">
+                <a class="contact-me button is-warning px-5 my-4 has-text-weight-bold">Contact me!</a>
+            </div>
+            <a href="https://github.com/ndamatta" target="_blank" aria-label="GitHub Profile">
+                <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" class="mt-2 mx-3">
+            </a>
+            <a href="https://www.linkedin.com/in/natanael-damatta/" target="_blank" aria-label="LinkedIn Profile">
+                <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" class="mt-2 mx-3">
+            </a>
         </section>
 
         <div class="tabs is-centered mx-6" id="aboutme-tabs" aria-label="About me tabs">
@@ -62,11 +75,47 @@
         <!-- MODAL -->
         <div class="modal">
             <div class="modal-background"></div>
-            <div class="modal-content">
-              <!-- Any other Bulma elements you want -->
+            <div class="modal-content has-background-white py-5 px-5">
+                <h3 class="title mb-3 has-text-centered">Contact me!</h3>
+                <div class="content has-text-centered mb-5">
+                    <a href="https://github.com/ndamatta" target="_blank" aria-label="GitHub Profile">
+                        <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" class="mt-2 mx-3">
+                    </a>
+                    <a href="https://www.linkedin.com/in/natanael-damatta/" target="_blank" aria-label="LinkedIn Profile">
+                        <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" class="mt-2 mx-3">
+                    </a>
+                </div>
+                
+                <!-- FORM -->
+                <form action="https://formspree.io/f/xbjvyzpn" method="POST">
+                    <div class="field">
+                        <label class="label">Your name</label>
+                        <div class="control">
+                            <input type="text" class="input" name="name" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-right">
+                            <input id="emailInput" class="input" name="email" type="email" placeholder="email@example.com" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+                        </div>
+                        <p id="emailError" class="help is-danger">Please, enter a valid email</p>
+                    </div>
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Hey Nate! I'm interested in..." name="text" required></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-6 has-text-centered">
+                        <button type="submit" class="button is-warning">Send email</button>
+                    </div>
+                </form>
             </div>
-            <button class="modal-close is-large" aria-label="close"></button>
-          </div>
+            <div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="content has-text-centered">

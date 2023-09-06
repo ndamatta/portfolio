@@ -71,7 +71,7 @@
                     <div class="column is-centered mx-6">
                         <h1 class="title mt-6 has-text-white">Hi, Nice to meet you <span class="has-text-warning">:)</span></h1>
                         <p class="subtitle has-text-white mt-6">I'm a <span class="has-text-warning">young</span>, <span class="has-text-warning">experienced</span>, and <span class="has-text-warning">responsible</span> person. I always stood out for my high moral values and for giving my best in each project.</p>
-                        <p class="subtitle has-text-white">Feel free to see my projects below, and if you are interested, you can <a href="#" class="has-text-warning is-underlined">learn more about me!</a></p>
+                        <p class="subtitle has-text-white">Feel free to see my projects below, and if you are interested, you can <a href="aboutme.html" class="has-text-warning is-underlined">learn more about me!</a></p>
                     </div>
                 </div> 
             </div>
@@ -115,25 +115,46 @@
         <div class="modal">
             <div class="modal-background"></div>
             <div class="modal-content has-background-white py-5 px-5">
-                <h3 class="title mb-6 has-text-centered">Contact me!</h3>
-              <!-- FORM -->
-            <form action="">
-                <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                        <input type="text" class="input" placeholder="Name">
-                    </div>
+                <h3 class="title mb-3 has-text-centered">Contact me!</h3>
+                <div class="content has-text-centered mb-5">
+                    <a href="https://github.com/ndamatta" target="_blank" aria-label="GitHub Profile">
+                        <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" class="mt-2 mx-3">
+                    </a>
+                    <a href="https://www.linkedin.com/in/natanael-damatta/" target="_blank" aria-label="LinkedIn Profile">
+                        <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" class="mt-2 mx-3">
+                    </a>
                 </div>
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input type="email" class="input" placeholder="email@example.com">
+                
+                <!-- FORM -->
+                <form action="https://formspree.io/f/xbjvyzpn" method="POST">
+                    <div class="field">
+                        <label class="label">Your name</label>
+                        <div class="control">
+                            <input type="text" class="input" name="name" required>
+                        </div>
                     </div>
-                </div>
-        </form>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-right">
+                            <input id="emailInput" class="input" name="email" type="email" placeholder="email@example.com" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+                        </div>
+                        <p id="emailError" class="help is-danger">Please, enter a valid email</p>
+                    </div>
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Hey Nate! I'm interested in..." name="text" required></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-6 has-text-centered">
+                        <button type="submit" class="button is-warning">Send email</button>
+                    </div>
+                </form>
             </div>
-            <button class="modal-close is-large" aria-label="close"></button>
-          </div>
+            <div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">

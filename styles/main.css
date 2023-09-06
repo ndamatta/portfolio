@@ -1,5 +1,5 @@
-.navbar-item, #home-calltoaction a, #home-calltoaction img {transition: transform .2s;}
-.navbar-item:hover, #home-calltoaction a:hover, #home-calltoaction img:hover {transform: scale(1.02);}
+.navbar-item, #home-calltoaction a, #home-calltoaction img, .modal img, form button {transition: transform .2s;}
+.navbar-item:hover, #home-calltoaction a:hover, #home-calltoaction img:hover, .modal img:hover, form button:hover {transform: scale(1.02);}
 .navbar-end{height: 98%;}
 .navbar-end span {transition: transform .2s;}
 .navbar-end span:hover {transform: scale(1.05);}
@@ -38,7 +38,8 @@
 .tabs-github-link:hover {color: #ffe08a}
 #portrait {padding-top: 0; border-radius: 200px;}
 #tab-content img {padding-top: 0;}
-#home-calltoaction {margin-bottom: 13rem;}
+#home-calltoaction, #aboutme-calltoaction {margin-bottom: 13rem;}
+
 
 @media screen and (max-width: 1024px) {
     .aboutme #tab-content .columns {

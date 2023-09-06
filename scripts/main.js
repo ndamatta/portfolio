@@ -6,15 +6,36 @@ burgerIcon.addEventListener('click', () => {
    navbarMenu.classList.toggle('is-active');
 })
 
+//EMAIL
+const emailInput = document.getElementById("emailInput");
+const emailError = document.getElementById("emailError");
+
+emailInput.addEventListener("input", function () {
+   const isValidEmail = validateEmail(emailInput.value);
+   if (isValidEmail) {
+         emailError.style.display = "none";
+         emailInput.classList.remove("is-danger");
+   } else {
+         emailError.style.display = "block";
+         emailInput.classList.add("is-danger");
+   }
+});
+function validateEmail(email) {
+   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+   return emailRegex.test(email);
+}
+
 //MODAL
-const contactmeBtn = document.querySelector('.contact-me');
+const contactmeBtn = document.querySelectorAll('.contact-me');
 const modal = document.querySelector('.modal');
 const modalBg = document.querySelector('.modal-background');
 const modalBtn = document.querySelector('.modal-close');
 
-contactmeBtn.addEventListener('click', () => {
-   modal.classList.add('is-active')
-})
+contactmeBtn.forEach(function (element) {
+   element.addEventListener('click', function () {
+       modal.classList.add('is-active');
+   });
+});
 modalBg.addEventListener('click', () => {
    modal.classList.remove('is-active');
 })
