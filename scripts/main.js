@@ -26,22 +26,47 @@ function validateEmail(email) {
 }
 
 //MODAL
-const contactmeBtn = document.querySelectorAll('.contact-me');
+// Define the animateCSS function
+const animateCSS = (element, animation, prefix = 'animate__') =>
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd, { once: true });
+  });
+
+// Your existing modal code
+const contactmeBtns = document.querySelectorAll('.contact-me'); // Select all elements with the class .contact-me
 const modal = document.querySelector('.modal');
 const modalBg = document.querySelector('.modal-background');
 const modalBtn = document.querySelector('.modal-close');
 
-contactmeBtn.forEach(function (element) {
-   element.addEventListener('click', function () {
-       modal.classList.add('is-active');
-   });
+contactmeBtns.forEach((contactmeBtn) => {
+  contactmeBtn.addEventListener('click', async () => {
+    modal.classList.add('is-active');
+    await animateCSS('.modal', 'fadeIn'); // Add fadeIn animation
+  });
 });
-modalBg.addEventListener('click', () => {
-   modal.classList.remove('is-active');
-})
+
+modal.addEventListener('click', async (e) => {
+  if (e.target === modalBg || e.target === modalBtn) {
+    await animateCSS('.modal', 'fadeOut'); // Add fadeOut animation
+    modal.classList.remove('is-active', 'animate__animated', 'animate__fadeOut');
+  }
+});
+
 modalBtn.addEventListener('click', () => {
-   modal.classList.remove('is-active');
-})
+  modal.classList.remove('is-active');
+});
+
 
 //ABOUT ME TABS
 const tabsData = [
