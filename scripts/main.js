@@ -98,9 +98,8 @@ const tabsData = [
       id: `whatiamlookingfor`,
       text: `First of all, thank you for your interest in getting to know me better. :)<br><br>I am actively seeking to join a <strong>programming team</strong>. I am well-versed in the dynamics of both startups and large corporations, and I am committed to maximizing my efficiency.<br><br>
       Certainly, I know that there is room for ongoing growth and improvement, but given my age and foundational knowledge in programming and databases, I feel confident in my ability to contribute as a developer.<br><br>If you feel I meet the requirments, feel free to contact me, <strong>I will be happy to work together</strong>!`,
-      image: ``,
-      div: `<div class="badge-base LI-profile-badge is-flex is-justify-content-center my-2" data-locale="es_ES" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="natanael-damatta" data-version="v1"></div>
-      `
+      image: `images/avatar.webp`,
+      div: ``
    }
 ];
 
@@ -121,7 +120,7 @@ function createTabs() {
                         </article>
                      </div>
                      <div class="column is-half-desktop">
-                        <div class="has-text-centered mx-3">
+                        <div class="has-text-centered mx-3 is-flex is-justify-content-center">
                            <img src="${tab.image}" alt="Picture about me" class="image is-5by3">
                            ${tab.div}
                         </div>                     
