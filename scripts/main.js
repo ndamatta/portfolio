@@ -201,6 +201,15 @@ if (check) {
    })
    .catch(error => console.error('Error fetching data:', error));
 }
+function parseStatus(status) {
+   switch(status) {
+      case 'active':
+         return "view in Github"
+      
+      case 'construction':
+         return "under construction"
+   }
+}
 
 
 
