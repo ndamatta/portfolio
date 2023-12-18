@@ -3,96 +3,112 @@
         "title": "TKINTER 2D SCENE PAINTER",
         "language": "python",
         "image": "./images/py/py7.webp",
-        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Tkinter%202D%20scene%20painter"
+        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Tkinter%202D%20scene%20painter",
+        "status": "active"
     },
     {
         "title": "TIRE VOLUME CALCULATOR",
         "language": "python",
         "image": "./images/py/py6.webp",
-        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Tire%20volume%20calculator"
+        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Tire%20volume%20calculator",
+        "status": "active"
     },
     {
         "title": "RANDOM SENTENCE GENERATOR",
         "language": "python",
         "image": "./images/py/py5.webp",
-        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Random%20sentence%20generator"
+        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Random%20sentence%20generator",
+        "status": "active"
     },
     {
         "title": "PANDAS TABLE FROM .CSV",
         "language": "python",
         "image": "./images/py/py4.webp",
-        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Pandas%20table%20from%20CSV"
+        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Pandas%20table%20from%20CSV",
+        "status": "active"
     },
     {
         "title": "FUEL USAGE CALCULATOR",
         "language": "python",
         "image": "./images/py/py3.webp",
-        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Fuel%20usage%20calculator"
+        "url": "https://github.com/ndamatta/CSE111-BYU-Idaho/tree/main/For%20PORTFOLIO/Fuel%20usage%20calculator",
+        "status": "active"
     },
     {
         "title": "LIFE EXPECTANCY ANALISIS",
         "language": "python",
         "image": "./images/py/py2.webp",
-        "url": "https://github.com/ndamatta/CSE110-BYU-Pathway/tree/main/For%20PORTFOLIO/Life%20expectancy%20analisis"
+        "url": "https://github.com/ndamatta/CSE110-BYU-Pathway/tree/main/For%20PORTFOLIO/Life%20expectancy%20analisis",
+        "status": "active"
     },
     {
         "title": "SHAPE CALCULATOR",
         "language": "python",
         "image": "./images/py/py1.webp",
-        "url": "https://github.com/ndamatta/CSE110-BYU-Pathway/tree/main/For%20PORTFOLIO/Shape%20calculator"
+        "url": "https://github.com/ndamatta/CSE110-BYU-Pathway/tree/main/For%20PORTFOLIO/Shape%20calculator",
+        "status": "active"
     },
     {
         "title": "SELF CONCIOUS",
         "language": "c-sharp",
         "image": "./images/cs/cs1.webp",
-        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Self%20Concious"
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Self%20Concious",
+        "status": "active"
     },
     {
         "title": "GOAL SETTER",
         "language": "c-sharp",
         "image": "./images/cs/cs2.webp",
-        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Goal%20Setter"
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Goal%20Setter",
+        "status": "active"
     },
     {
         "title": "HIDE SCRIPTURE",
         "language": "c-sharp",
         "image": "./images/cs/cs3.webp",
-        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Hide%20Scripture"
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Hide%20Scripture",
+        "status": "active"
     },
     {
         "title": "JOURNAL",
         "language": "c-sharp",
         "image": "./images/cs/cs4.webp",
-        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Journal"
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Journal",
+        "status": "active"
     },
     {
         "title": "LIST CALCULATOR",
         "language": "c-sharp",
         "image": "./images/cs/cs5.webp",
-        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/List%20calculator"
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/List%20calculator",
+        "status": "active"
     },
     {
         "title": "RESUME DISPLAY",
         "language": "c-sharp",
         "image": "./images/cs/cs6.webp",
-        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Resume%20display"
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Resume%20display",
+        "status": "active"
     },
     {
         "title": "SHAPE AREA CALCULATOR",
         "language": "c-sharp",
         "image": "./images/cs/cs7.webp",
-        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Shape%20area%20calculator"
+        "url": "https://github.com/ndamatta/CSE210-BYU-Idaho/tree/main/For%20PORTFOLIO/Shape%20area%20calculator",
+        "status": "active"
     },
     {
         "title": "BOUNTIFUL FOODS",
         "language": "web",
         "image": "./images/web/bountiful.webp",
-        "url": "https://github.com/ndamatta/bountifulfoods"
+        "url": "https://github.com/ndamatta/bountifulfoods",
+        "status": "active"
     },
     {
         "title": "FUNES COC",
         "language": "web",
         "image": "./images/web/funescoc.webp",
-        "url": "https://github.com/ndamatta/funescoc"
+        "url": "https://github.com/ndamatta/funescoc",
+        "status": "active"
     }
 ] 
