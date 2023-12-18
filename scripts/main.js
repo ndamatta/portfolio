@@ -187,7 +187,7 @@ if (check) {
                            <figure class="image is-3by1"><img src="${cardData.image}" alt=""></figure>
                        </div>
                        <div class="card-footer">  
-                           <p class="card-footer-item"><a href="${cardData.url}" target="_blank" id="view-github" rel="noopener noreferrer">View in Github</a></p>
+                           <p class="card-footer-item"><a href="${cardData.url}" target="_blank" id="project-status" rel="noopener noreferrer">${parseStatus(cardData.status)}</a></p>
                        </div>
                    </div>
                </div>
