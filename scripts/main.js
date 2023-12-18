@@ -107,10 +107,12 @@ tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
       tabs.forEach(item => item.classList.remove('is-active'))
       tab.classList.add('is-active');
+      tab.scrollIntoView({ behavior: "smooth", block: "start"})
 
       const tabContentBoxes = document.querySelectorAll('#tab-content > div');
       const target = tab.dataset.target;
       tabContentBoxes.forEach(box => {
+         
          if (box.getAttribute('id') === target) {
             box.classList.remove('is-hidden');
             box.classList.add('is-active');
@@ -120,6 +122,7 @@ tabs.forEach((tab) => {
       })
    })
 });
+
 
 //PROJECTS
 const check = document.querySelector('#c-sharp-column-container');
