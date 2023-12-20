@@ -66,6 +66,10 @@ modalBtn.addEventListener('click', () => {
   modal.classList.remove('is-active');
 });
 
+//TABS
+function getContentBoxes(){return document.querySelectorAll('#tab-content > div');}
+function getTabs(){return document.querySelectorAll('.tabs li');}
+
 function createTabs() {
    const tabContent = document.querySelector('#tab-content');
    fetch('./json/aboutme.json')
@@ -99,10 +103,6 @@ function createTabs() {
    })
 }
 createTabs();
-
-//TABS
-function getContentBoxes(){return document.querySelectorAll('#tab-content > div');}
-function getTabs(){return document.querySelectorAll('.tabs li');}
 
 function hide(content){
    content.classList.remove('is-active');
