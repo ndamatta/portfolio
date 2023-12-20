@@ -67,7 +67,7 @@ modalBtn.addEventListener('click', () => {
 });
 
 //TABS
-function getContentBoxes(){return document.querySelectorAll('#tab-content > div');}
+function getCards(){return document.querySelectorAll('#tab-content > div');}
 function getTabs(){return document.querySelectorAll('.tabs li');}
 function hide(content){
    content.classList.remove('is-active');
@@ -77,16 +77,19 @@ function show(content){
    content.classList.remove('is-hidden');
    content.classList.add('is-active');
 }
-const checkWeb = document.querySelector('#web');
-if (checkWeb) {
+function setupInitialCards(card){
    document.addEventListener('DOMContentLoaded', () => {
-      const firstTab = document.querySelector('#web')
-      getContentBoxes().forEach((hide));
+      const firstTab = document.querySelector(card)
+      getCards().forEach((hide));
       show(firstTab);
     });
 }
-
+const checkWeb = document.querySelector('#web');
 const checkAboutme = document.querySelector('#whoami');
+
+if (checkWeb){setupInitialCards("#web")}
+if (checkAboutme){setupInitialCards("#whoami")}
+
 if (checkAboutme) {
    fetch('./json/aboutme.json')
    .then(response => response.json())
@@ -94,6 +97,13 @@ if (checkAboutme) {
       jsonAboutme.forEach(cardData => {
          if (cardData.div === '') {
             cardData.div = ''
+         }
+         const columnContainers = {
+            "whoami": document.querySelector('#whoami'),
+            "hobbies": document.querySelector('#hobbies'),
+            "education": document.querySelector('#education'),
+            "job": document.querySelector('#job'),
+            "whatiamlookingfor": document.querySelector('#whatiamlookingfor'),
          }
          const cardTemplate = `
          <div class="columns mt-3 mb-6 is-vcentered">
@@ -113,7 +123,7 @@ if (checkAboutme) {
          </div>
          `;
          const cardContainer = columnContainers[cardData.id]
-         cardContainer.innerHTML += cardContainer;
+         cardContainer.innerHTML += cardTemplate;
       
       })
    })
@@ -134,17 +144,15 @@ function showActiveList() {
 function showActiveContentBoxes(tab) {
    const target = tab.dataset.target;
 
-   getContentBoxes().forEach(box => {
-   if (box.getAttribute('id') === target) {
-      show(box)
+   getCards().forEach(card => {
+   if (card.getAttribute('id') === target) {
+      show(card)
     } else {
-      hide(box);
+      hide(card);
     }
 })
 }
 showActiveList();
-
-
 
 //PROJECTS
 const check = document.querySelector('#web-column-container');
