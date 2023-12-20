@@ -101,27 +101,50 @@ function createTabs() {
 createTabs();
 
 //TABS
-const tabs = document.querySelectorAll('.tabs li');
+function getContentBoxes(){return document.querySelectorAll('#tab-content > div');}
+function hide(content){
+   content.classList.remove('is-active');
+   content.classList.add('is-hidden');
+}
+function show(content){
+   content.classList.remove('is-hidden');
+   content.classList.add('is-active');
+}
 
-tabs.forEach((tab) => {
+document.addEventListener('DOMContentLoaded', () => {
+   const firstTab = document.querySelector('#web')
+   getContentBoxes().forEach((tab) => {
+      hide(tab);
+   })
+   show(firstTab);
+ });
+
+function showActiveList() {
+   const tabs = document.querySelectorAll('.tabs li');
+   tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
       tabs.forEach(item => item.classList.remove('is-active'))
       tab.classList.add('is-active');
       tab.scrollIntoView({ behavior: "smooth", block: "start"})
 
-      const tabContentBoxes = document.querySelectorAll('#tab-content > div');
-      const target = tab.dataset.target;
-      tabContentBoxes.forEach(box => {
-         
-         if (box.getAttribute('id') === target) {
-            box.classList.remove('is-hidden');
-            box.classList.add('is-active');
-          } else {
-            box.classList.add('is-hidden');
-          }
-      })
+      showActiveContentBoxes(tab);
    })
 });
+}
+
+function showActiveContentBoxes(tab) {
+   const target = tab.dataset.target;
+
+   getContentBoxes().forEach(box => {
+   if (box.getAttribute('id') === target) {
+      show(box)
+    } else {
+      hide(box);
+    }
+})
+}
+showActiveList();
+
 
 
 //PROJECTS
