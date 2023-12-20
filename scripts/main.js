@@ -84,50 +84,11 @@ function setupInitialCards(card){
       show(firstTab);
     });
 }
-const checkWeb = document.querySelector('#web');
+const checkProjects = document.querySelector('#web');
 const checkAboutme = document.querySelector('#whoami');
 
-if (checkWeb){setupInitialCards("#web")}
+if (checkProjects){setupInitialCards("#web")}
 if (checkAboutme){setupInitialCards("#whoami")}
-
-if (checkAboutme) {
-   fetch('./json/aboutme.json')
-   .then(response => response.json())
-   .then(jsonAboutme => {
-      jsonAboutme.forEach(cardData => {
-         if (cardData.div === '') {
-            cardData.div = ''
-         }
-         const columnContainers = {
-            "whoami": document.querySelector('#whoami'),
-            "hobbies": document.querySelector('#hobbies'),
-            "education": document.querySelector('#education'),
-            "job": document.querySelector('#job'),
-            "whatiamlookingfor": document.querySelector('#whatiamlookingfor'),
-         }
-         const cardTemplate = `
-         <div class="columns mt-3 mb-6 is-vcentered">
-            <div class="column is-half-desktop">
-               <article class="message is-dark mx-4">
-                  <div class="message-body has-text-black">
-                     <p class="my-2">${cardData.text}</p>
-                  </div>
-               </article>
-            </div>
-            <div class="column is-half-desktop">
-               <div class="has-text-centered mx-3 is-flex is-justify-content-center">
-                  <img src="${cardData.image}" alt="Picture about me" class="image is-5by3">
-                     ${cardData.div}
-               </div>                     
-            </div>
-         </div>
-         `;
-         const cardContainer = columnContainers[cardData.id]
-         cardContainer.innerHTML += cardTemplate;
-      
-      })
-   })
-}
 
 function showActiveList() {
    getTabs().forEach((tab) => {
@@ -155,8 +116,7 @@ function showActiveContentBoxes(tab) {
 showActiveList();
 
 //PROJECTS
-const check = document.querySelector('#web-column-container');
-if (check) {
+if (checkProjects) {
    fetch('./json/projects.json')
    .then(response => response.json())
    .then(jsonData => {
@@ -196,4 +156,43 @@ function parseStatus(status) {
       case 'construction':
          return "under construction"
    }
+}
+
+// ABOUT ME
+if (checkAboutme) {
+   fetch('./json/aboutme.json')
+   .then(response => response.json())
+   .then(jsonAboutme => {
+      jsonAboutme.forEach(cardData => {
+         if (cardData.div === '') {
+            cardData.div = ''
+         }
+         const columnContainers = {
+            "whoami": document.querySelector('#whoami'),
+            "hobbies": document.querySelector('#hobbies'),
+            "education": document.querySelector('#education'),
+            "job": document.querySelector('#job'),
+            "whatiamlookingfor": document.querySelector('#whatiamlookingfor'),
+         }
+         const cardTemplate = `
+         <div class="columns mt-3 mb-6 is-vcentered">
+            <div class="column is-half-desktop">
+               <article class="message is-dark mx-4">
+                  <div class="message-body has-text-black">
+                     <p class="my-2">${cardData.text}</p>
+                  </div>
+               </article>
+            </div>
+            <div class="column is-half-desktop">
+               <div class="has-text-centered mx-3 is-flex is-justify-content-center">
+                  <img src="${cardData.image}" alt="Picture about me" class="image is-5by3">
+               </div>                     
+            </div>
+         </div>
+         `;
+         const cardContainer = columnContainers[cardData.id]
+         cardContainer.innerHTML += cardTemplate;
+      
+      })
+   })
 }
