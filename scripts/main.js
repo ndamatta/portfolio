@@ -102,6 +102,8 @@ createTabs();
 
 //TABS
 function getContentBoxes(){return document.querySelectorAll('#tab-content > div');}
+function getTabs(){return document.querySelectorAll('.tabs li');}
+
 function hide(content){
    content.classList.remove('is-active');
    content.classList.add('is-hidden');
@@ -113,17 +115,14 @@ function show(content){
 
 document.addEventListener('DOMContentLoaded', () => {
    const firstTab = document.querySelector('#web')
-   getContentBoxes().forEach((tab) => {
-      hide(tab);
-   })
+   getContentBoxes().forEach((hide));
    show(firstTab);
  });
 
 function showActiveList() {
-   const tabs = document.querySelectorAll('.tabs li');
-   tabs.forEach((tab) => {
+   getTabs().forEach((tab) => {
       tab.addEventListener('click', () => {
-      tabs.forEach(item => item.classList.remove('is-active'))
+      getTabs().forEach(item => item.classList.remove('is-active'))
       tab.classList.add('is-active');
       tab.scrollIntoView({ behavior: "smooth", block: "start"})
 
