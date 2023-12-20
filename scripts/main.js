@@ -69,6 +69,20 @@ modalBtn.addEventListener('click', () => {
 //TABS
 function getContentBoxes(){return document.querySelectorAll('#tab-content > div');}
 function getTabs(){return document.querySelectorAll('.tabs li');}
+function hide(content){
+   content.classList.remove('is-active');
+   content.classList.add('is-hidden');
+}
+function show(content){
+   content.classList.remove('is-hidden');
+   content.classList.add('is-active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+   const firstTab = document.querySelector('#web')
+   getContentBoxes().forEach((hide));
+   show(firstTab);
+ });
 
 function createTabs() {
    const tabContent = document.querySelector('#tab-content');
@@ -103,21 +117,6 @@ function createTabs() {
    })
 }
 createTabs();
-
-function hide(content){
-   content.classList.remove('is-active');
-   content.classList.add('is-hidden');
-}
-function show(content){
-   content.classList.remove('is-hidden');
-   content.classList.add('is-active');
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-   const firstTab = document.querySelector('#web')
-   getContentBoxes().forEach((hide));
-   show(firstTab);
- });
 
 function showActiveList() {
    getTabs().forEach((tab) => {
