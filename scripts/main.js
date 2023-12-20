@@ -77,46 +77,47 @@ function show(content){
    content.classList.remove('is-hidden');
    content.classList.add('is-active');
 }
+const checkWeb = document.querySelector('#web');
+if (checkWeb) {
+   document.addEventListener('DOMContentLoaded', () => {
+      const firstTab = document.querySelector('#web')
+      getContentBoxes().forEach((hide));
+      show(firstTab);
+    });
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-   const firstTab = document.querySelector('#web')
-   getContentBoxes().forEach((hide));
-   show(firstTab);
- });
-
-function createTabs() {
-   const tabContent = document.querySelector('#tab-content');
+const checkAboutme = document.querySelector('#whoami');
+if (checkAboutme) {
    fetch('./json/aboutme.json')
    .then(response => response.json())
    .then(jsonAboutme => {
-      jsonAboutme.forEach(tab => {
-         if (tab.div === '') {
-            tab.div = ''
+      jsonAboutme.forEach(cardData => {
+         if (cardData.div === '') {
+            cardData.div = ''
          }
-         const tabHTML = `
-         <div id="${tab.id}" class="is-hidden animate__animated animate__fadeIn">
-            <div class="columns mt-3 mb-6 is-vcentered">
-                  <div class="column is-half-desktop">
-                     <article class="message is-dark mx-4">
-                        <div class="message-body has-text-black">
-                              <p class="my-2">${tab.text}</p>
-                        </div>
-                     </article>
+         const cardTemplate = `
+         <div class="columns mt-3 mb-6 is-vcentered">
+            <div class="column is-half-desktop">
+               <article class="message is-dark mx-4">
+                  <div class="message-body has-text-black">
+                     <p class="my-2">${cardData.text}</p>
                   </div>
-                  <div class="column is-half-desktop">
-                     <div class="has-text-centered mx-3 is-flex is-justify-content-center">
-                        <img src="${tab.image}" alt="Picture about me" class="image is-5by3">
-                        ${tab.div}
-                     </div>                     
-                  </div>
+               </article>
+            </div>
+            <div class="column is-half-desktop">
+               <div class="has-text-centered mx-3 is-flex is-justify-content-center">
+                  <img src="${cardData.image}" alt="Picture about me" class="image is-5by3">
+                     ${cardData.div}
+               </div>                     
             </div>
          </div>
          `;
-      tabContent.innerHTML += tabHTML;
+         const cardContainer = columnContainers[cardData.id]
+         cardContainer.innerHTML += cardContainer;
+      
       })
    })
 }
-createTabs();
 
 function showActiveList() {
    getTabs().forEach((tab) => {
@@ -146,7 +147,7 @@ showActiveList();
 
 
 //PROJECTS
-const check = document.querySelector('#c-sharp-column-container');
+const check = document.querySelector('#web-column-container');
 if (check) {
    fetch('./json/projects.json')
    .then(response => response.json())
