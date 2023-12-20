@@ -81,32 +81,32 @@
         <!-- TABS -->
         <div class="tabs is-centered is-boxed mx-6" id="home-tabs">
             <ul role="tablist">
-                <li class="is-active" data-target="c-sharp" role="tab" aria-selected="true"><a class="px-3">C#</a></li>
+                <li class="is-active" data-target="web" role="tab" aria-selected="true"><a class="px-3">Web</a></li>
+                <li data-target="c-sharp" role="tab" aria-selected="false"><a class="px-3">C#</a></li>
                 <li data-target="python" role="tab" aria-selected="false"><a class="px-3">Python</a></li>
-                <li data-target="web" role="tab" aria-selected="false"><a class="px-3">Web</a></li>
             </ul>
         </div>
 
         <!-- TABS CONTENT -->
         <div class="has-text-centered" id="tab-content">
-            <div id="c-sharp" class="is-active mx-6">
+            <div class="mx-6" id="web" data-target="web">
+                <h1 class="mt-2 title is-size-5">Some of my Web projects! :)</h1>
+                <h2 class="subtitle mt-1 is-size-6">click the buttons for detailed info</h2>
+                <div class="columns mb-6 is-multiline" id="web-column-container">
+                    <!-- GENERATED WITH JS -->
+                </div>
+            </div>
+            <div class="mx-6" id="c-sharp" data-target="c-sharp">
                 <h1 class="mt-2 title is-size-5">Some of my C# projects! :)</h1>
                 <h2 class="subtitle mt-1 is-size-6">click the buttons for detailed info</h2>
                 <div class="columns mb-6 is-multiline" id="c-sharp-column-container">
                     <!-- GENERATED WITH JS -->
                 </div>
             </div>
-            <div class="mx-6" id="python">
+            <div class="mx-6" id="python" data-target="python">
                 <h1 class="mt-2 title is-size-5">Some of my Python projects! :)</h1>
                 <h2 class="subtitle mt-1 is-size-6">click the buttons for detailed info</h2>
                 <div class="columns mb-6 is-multiline" id="python-column-container">
-                    <!-- GENERATED WITH JS -->
-                </div>
-            </div>
-            <div class="mx-6" id="web">
-                <h1 class="mt-2 title is-size-5">Some of my Web projects! :)</h1>
-                <h2 class="subtitle mt-1 is-size-6">click the buttons for detailed info</h2>
-                <div class="columns mb-6 is-multiline" id="web-column-container">
                     <!-- GENERATED WITH JS -->
                 </div>
             </div>
