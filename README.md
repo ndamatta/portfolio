@@ -4,7 +4,7 @@
 💻 I'm open to join and collaborate in a programming related job.<br>
 📚 I'm pursuing a BS in Applied Technology at BYU-Idaho. I'm currently taking my Associate Degree in Web Development.<br>
 <br>
-Feel free to go over my repositories, they have my projects and websites. All of them have descriptions, so you don't get lost.<br>
+Feel free to go over my repositories, you will find my projects and websites.<br>
 Of course that you can connect with me on <a href="https://www.linkedin.com/in/natanael-damatta/">Linkedin</a>
 
 
