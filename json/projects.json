@@ -101,21 +101,21 @@
         "title": "UNFOLLOWZ",
         "language": "web",
         "image": "./images/web/unfollowz.webp",
-        "url": "https://github.com/ndamatta/unfollowz",
-        "status": "construction"
+        "url": "https://ndamatta.github.io/unfollowz",
+        "status": "web-active"
     },
     {
         "title": "BOUNTIFUL FOODS",
         "language": "web",
         "image": "./images/web/bountiful.webp",
-        "url": "https://github.com/ndamatta/bountifulfoods",
-        "status": "active"
+        "url": "https://ndamatta.github.io/bountifulfoods",
+        "status": "web-active"
     },
     {
         "title": "FUNES COC",
         "language": "web",
         "image": "./images/web/funescoc.webp",
-        "url": "https://github.com/ndamatta/funescoc",
-        "status": "active"
+        "url": "https://ndamatta.github.io/funescoc",
+        "status": "web-active"
     }
 ] 
