@@ -153,6 +153,9 @@ function parseStatus(status) {
       case 'active':
          return "view in Github"
       
+      case 'web-active':
+         return "visit website"
+      
       case 'construction':
          return "under construction"
    }
